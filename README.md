@@ -33,3 +33,6 @@ topic 2 리뷰입니다.
 교수님께서 왜 이렇게 복잡하게 짰냐고 하실 수도 있다.
 Step 4: Calculate Predictions인데 .. estimation이랑 prediction은 정의가 아예 달라서.. prediction이라고 다 말하기는 좀 어렵다.
 ```
+-> 철 topic 2 리뷰 반영 `prediction_simulation2_v2.r`
+   * simulation loop 하기 전에 simulation once 추가해서 각 시뮬레이션이 어떻게 돌아가는지 파악할 수 있도록 추가함.
+   * 용어 수정.
