@@ -25,10 +25,11 @@
 ### 철 review
 ```
 topic 1 리뷰입니다.
-SSE 말고 MSS 사용하셔야 해요. SSE 정의는 ANOVA/회귀분석에서 사용하는 변동 설명 안되는 부분, 실제 y값과 추정된 y값 차이의 제곱합이라 SSE 용어는 적합하지 않는 거 같아요. 그래서 SS라고 표현하는 게 맞을 것 같고, 평균제곱합 MSS은 SS에서 자유도로 나누는 거니까 제곱합에서 (n_samples -1)로 나누면 됩니다.
+SSE 말고 MSS 사용해야 한다.
+SSE 정의는 ANOVA/회귀분석에서 사용하는 변동 설명 안되는 부분, 실제 y값과 추정된 y값 차이의 제곱합이라 SSE 용어는 적합하지 않다.
+그래서 SS라고 표현하는 게 맞을 것 같고, 평균제곱합 MSS은 SS에서 자유도로 나누는 거니까 제곱합에서 (n_samples -1)로 계산해라.
 
 topic 2 리뷰입니다.
-의도는 잘 파악한 거 같아요.
 교수님께서 왜 이렇게 복잡하게 짰냐고 하실 수도 있다.
-Step 4: Calculate Predictions인데 .. estimation이랑 prediction은 정의가 아예 달라서.. prediction이라고 다 말하기는 좀 어렵지 않나 생각이 드는데 한번 확인해보셔야 될 거 같아요.
+Step 4: Calculate Predictions인데 .. estimation이랑 prediction은 정의가 아예 달라서.. prediction이라고 다 말하기는 좀 어렵다.
 ```
