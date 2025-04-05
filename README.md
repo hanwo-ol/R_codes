@@ -36,3 +36,11 @@ Step 4: Calculate Predictions인데 .. estimation이랑 prediction은 정의가 
 -> 철 topic 2 리뷰 반영 `prediction_simulation2_v2.r`
    * simulation loop 하기 전에 simulation once 추가해서 각 시뮬레이션이 어떻게 돌아가는지 파악할 수 있도록 추가함.
    * 용어 수정.
+
+
+## patch note 2025 04 05
+### 교수님과 질의응답
+
+```
+평균 제곱합은 sum[(X-훈련데이터 표본평균)^2]/표본개수로 계산해라.   
+```
