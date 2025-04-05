@@ -44,3 +44,4 @@ Step 4: Calculate Predictions인데 .. estimation이랑 prediction은 정의가 
 ```
 평균 제곱합은 sum[(X-훈련데이터 표본평균)^2]/표본개수로 계산해라.   
 ```
+-> 반영: 
