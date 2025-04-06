@@ -38,10 +38,13 @@ Step 4: Calculate Predictions인데 .. estimation이랑 prediction은 정의가 
    * 용어 수정.
 
 
-## patch note 2025 04 05
+## patch note 2025 04 05, 06
 ### 교수님과 질의응답
 
 ```
 평균 제곱합은 sum[(X-훈련데이터 표본평균)^2]/표본개수로 계산해라.   
+주석이 너무 많다.
+코드가 너무 길다.
+
 ```
--> 반영: 
+-> 반영: `prediction_simulation2_v3.r`, `prediction_simulation1_v3.r`
