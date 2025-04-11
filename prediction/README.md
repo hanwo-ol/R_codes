@@ -48,3 +48,10 @@ Step 4: Calculate Predictions인데 .. estimation이랑 prediction은 정의가 
 
 ```
 -> 반영: `prediction_simulation2_v3.r`, `prediction_simulation1_v3.r`
+
+
+다음 코드 작성시 유의사항
+- 코드를 너무 길게 작성하지 말 것.
+- 주석을 너무 많이 달지 말 것.
+- 기본적인 코드로 학생들이 이해하기 쉽도록 만들 것.
+- 사용자 정의 함수를 사용하지 말 것.
