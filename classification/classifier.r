@@ -33,14 +33,14 @@ decision_tree_model <- rpart(
   method = "class" # Specify classification tree
 )
 
-# Make predictions on the testing data
-decision_tree_predictions <- predict(decision_tree_model, testing_data, type = "class")
+# Make classifications on the testing data
+decision_tree_classification <- predict(decision_tree_model, testing_data, type = "class")
 
 # --- 3. Evaluate Decision Tree ---
 
 # Calculate Confusion Matrix and Statistics using caret's confusionMatrix
 dt_conf_matrix_details <- confusionMatrix(
-  data = decision_tree_predictions,       # Predicted classes
+  data = decision_tree_classification,       # Predicted classes
   reference = testing_data[[target_variable]]
 )
 
@@ -64,7 +64,7 @@ testing_data_knn[knn_predictor_variables] <- scale(testing_data_knn[knn_predicto
                                                    scale = attr(scale(training_data[knn_predictor_variables]), "scaled:scale"))
 
 # Perform k-NN classification
-knn_predictions <- knn(
+knn_classification <- knn(
   train = training_data_knn[, knn_predictor_variables], # Training predictors (scaled)
   test = testing_data_knn[, knn_predictor_variables],   # Testing predictors (scaled)
   cl = training_data[[target_variable]],                # True class labels for training data
@@ -75,7 +75,7 @@ knn_predictions <- knn(
 
 # Calculate Confusion Matrix and Statistics using caret's confusionMatrix
 knn_conf_matrix_details <- confusionMatrix(
-  data = knn_predictions,                     # Predicted classes
+  data = knn_classification,                     # Predicted classes
   reference = testing_data[[target_variable]] # Actual classes
 )
 
