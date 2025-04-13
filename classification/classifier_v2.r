@@ -51,7 +51,7 @@ knn_classification <- knn(
   train = training_data_knn[, knn_predictor_variables], # Training predictors (scaled)
   test = testing_data_knn[, knn_predictor_variables],   # Testing predictors (scaled)
   cl = training_data[[knn_target_variable]],            # True class labels for training data
-  k = 5
+  k = 5 # random k
 )
 
 # --- 5. Evaluate k-NN ---
@@ -62,3 +62,7 @@ knn_conf_matrix_details <- confusionMatrix(
 knn_conf_matrix_details$table
 knn_conf_matrix_details$overall["Accuracy"]
 knn_conf_matrix_details$byClass[, c("Precision", "Recall")]
+
+
+# optional : how to find optimal K
+"https://github.com/hanwo-ol/R_codes/blob/13a04de802b5c4dda81d334a1dc374a9e4dfc1f8/classification/learn_more_k.r"
