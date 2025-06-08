@@ -1,7 +1,7 @@
 보충 설명용 페이지
 ---
-    *   **예시 HTML:**
-        ```html
+
+```html
         <div id="content-area" class="main">
             <h1 class="title news-title">오늘의 주요 뉴스</h1>
             <p>첫 번째 뉴스 문단입니다. <a href="/news/1" class="internal-link">자세히 보기</a></p>
@@ -16,7 +16,7 @@
                 <li>항목 3</li>
             </ul>
         </div>
-        ```
+```
 
 
 *   **주요 CSS 선택자 유형 및 BeautifulSoup 예시 (위 HTML 기준):**
